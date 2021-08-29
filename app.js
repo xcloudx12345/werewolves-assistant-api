@@ -34,7 +34,7 @@ connectDatabase().then(() => {
     app.listen(Config.app.port);
     if (Config.app.nodeEnv !== "test") {
         console.log(`${bold("🐺 Werewolves Assistant API")} server started on port ${bold.blue(Config.app.port)} and running on database ${bold.green(Config.db.name)}.`);
-        console.log(`${bold("📚 API Documentation:")} https://besim.herokuapp.com:${Config.app.port}/apidoc`);
+        console.log(`${bold("📚 API Documentation:")} https://besim.herokuapp.com/apidoc`);
     }
     app.emit("ready");
 });
