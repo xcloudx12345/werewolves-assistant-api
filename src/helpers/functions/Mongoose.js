@@ -10,5 +10,5 @@ exports.connect = () => {
         auth: { authSource: "admin" },
         ...Config.db.auth,
     };
-    return mongoose.connect(`mongodb://localhost/${Config.db.name}`, mongooseOptions);
+    return mongoose.connect(`mongodb+srv://xcloudx:<password>@cluster0.cstwg.mongodb.net/werewolf?retryWrites=true&w=majority`, mongooseOptions);
 };
