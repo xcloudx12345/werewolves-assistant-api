@@ -34,7 +34,7 @@ connectDatabase().then(() => {
     app.listen(Config.app.port);
     if (Config.app.nodeEnv !== "test") {
         console.log(`${bold("🐺 Werewolves Assistant API")} server started on port ${bold.blue(Config.app.port)} and running on database ${bold.green(Config.db.name)}.`);
-        console.log(`${bold("📚 API Documentation:")} mongodb+srv://xcloudx:<password>@cluster0.cstwg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority:${Config.app.port}/apidoc`);
+        console.log(`${bold("📚 API Documentation:")} mongodb+srv://xcloudx:9627008@cluster0.cstwg.mongodb.net/werewolf?retryWrites=true&w=majority:${Config.app.port}/apidoc`);
     }
     app.emit("ready");
 });
